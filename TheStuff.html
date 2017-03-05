@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoolSh*t</title>
+      <link rel="icon" href="icon.png">
+
+   	<link href="MY.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<script>
+  $.get('http://localhost:5000/data/', function(response) {
+    alert(response.json);
+\    var ddjhsa = response.json;
+
+    $('.jsonStuff').textarea = ddjhsa;
+
+  })
+</script>
+
+
+<div class="container" style="background: white; height: 1500px;">
+	<nav class="nav navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			
+		<a class="navbar-brand" href="index.html"> <img src="icon.png" height="30"></a>			
+		<div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            	<li><a href="index.html"><span class="glyphicon glyphicon-home" ></span>Home</a></li>
+				<li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"></span>About</a></li> <li class="active"><a href="TheStuff.html"><span class="glyphicon glyphicon-signal"></span>The Stuff</a></li>  <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact us</a></li>            </ul> <ul class="header-nav user-nav float-right" style="position:relative; left: 650px; top:15px;">
+                  <li class="header-nav-item">
+                    <a href="login.html"><span class="glyphicon glyphicon-off"></span>Log out</a>
+                  </li>
+                    
+                  </ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+    <div class="jumbotron" style="background: lightgreen;">
+    <h1 align="center">Hey Bitches</h1>      
+    <p align="center">In 21st century, <strong>Data is the real bitch.</strong></p>
+  	</div>  
+  <form class="jsonStuff">
+    <textarea class="jsonStuff" style="width: 55%; left: 300px;" placeholder="Write here..."></textarea>
+  </form>
+
+    <!--<button onclick="generateFaces()">Button</button> 
+        <h1>Matching Game!!</h1>     
+        <p>Click on the extra smiley on the left side!!</p>
+
+        <div id="leftSide">            
+
+
+        </div>
+        <div id="rightSide" style="left: 650px; border-left: 1px solid black">
+          
+        </div>-->
+
+</div>
+  </div>
+<section id="footer" align="center"><p style="color: lightblue">Copyright &copy; CUHacking Cool Team</p>></section>
+</body>
+</html>

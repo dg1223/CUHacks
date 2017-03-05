@@ -1,0 +1,164 @@
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+textarea {
+  position: absolute;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.nav ul a {
+    text-decoration: none;
+    text-decoration-color: white;
+}
+@media(min-width: 1200px) {
+    .container{
+        max-width: 970px;}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+code {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: center;
+}
+header,
+section,
+aside,
+section {
+  width: 100%;
+  height:70%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+#footer {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 0px;
+        position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.jumbotron{
+    width:100%;
+  }
+  button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+form{
+  text-align: justify;
+  background-size: contain;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+    height: 200px;
+    margin: auto;
+    width: 25%;
+
+}
+
+body{
+  background: black;
+  background-image: url(https://media.giphy.com/media/AOSwwqVjNZlDO/giphy.gif);
+  background-size: cover;
+  font-family: 'Karla',sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header img {
+  float: left;
+  width: 35px;
+  height: 35px;
+  background: black;
+}
+
+.header h1 {
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+
+.welcome h1{
+  text-align: center;
+  font-family: 'Arsenal', sans-serif;
+  font-size: 80px;
+  top: 500px;
+
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+input[type=text] {
+    width: 100%;
+    padding:8px 10px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #32CD32;
+    color: black;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
